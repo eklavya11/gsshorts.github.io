@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-Feb-2021, 12:05:38 am
+    Author     : Kumar Eklavya
+*/
+body {
+  padding-top: px ;
+}
+
+.grid {
+    padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: px;
+  align-items: stretch;
+  background-color:#262626;
+}
+
+.grid > article {
+  border: 5px solid white;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: px;
+  text-align: center;
+}
+
+h1{
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+p{
+  color:white;
+  font-family: Helvetica,sans-serif;
+  font-size:13px;
+  padding-top:5px;
+}

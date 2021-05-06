@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>GSshorts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+              
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link  rel="stylesheet" href="about.css">
+<link  rel="stylesheet" href="newcss.css">
+<link  rel="stylesheet" href="sidebar.css">
+<link  rel="stylesheet" href="catgry.css">
+
+ 
+    </head>
+    <body>
+        
+        <!--nav-->
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a style="text-align: center;font-size: 25px;"href="index.html"><b>GS SHORTS</b></a>
+            </div>
+            
+            
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: px">
+        <!-- just to make scrolling effect possible -->
+			
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <main>
+        <div  style="align-content: center;",class="container">
+  <main class="grid">
+    <article>
+      <img src="https://www.planetware.com/wpimages/2019/05/italy-rome-colosseum-visiting-highlights-tips-tours.jpg" alt="Sample photo">
+      <div class="text">
+          <a href="history.html"><h1><b>History</b></h1></a>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://timesofindia.indiatimes.com/thumb/msid-65032401,width-400,resizemode-4/65032401.jpg?imglength=78663" alt="Sample photo">
+      <div class="text">
+          <a href="polity.html"><h1><b>Polity</b></h1></a>
+              </div>
+    </article>
+    <article>
+      <img src="https://static.toiimg.com/photo/64447677.cms" alt="Sample photo">
+      <div class="text">
+          <a href="geo.html"><h1><b>Geography</b></h1></a>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuKxqRVkCVlzxEIEtUu1BttitYGirGljHJg&usqp=CAU" alt="Sample photo">
+      <div class="text">
+          <a href="eco.html"><h1><b>Economics</b></h1></a>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://cnet1.cbsistatic.com/img/2ZjmzrycBZQD9Dpnt_EnfQ7TTro=/940x0/2020/05/31/5112f3db-5af6-431c-bc0d-a8108ccad2ee/spacex-falcon-9-launch.jpg" alt="Sample photo">
+      <div class="text">
+          <a href="sci.html"><h1><b>Science & Tech</b></h1></a>
+        
+      </div>
+    </article>
+    <article>
+      <img src="https://www.abc.net.au/news/image/10693660-3x2-940x627.jpg" alt="Sample photo">
+      <div class="text">
+          <a href="ca.html"><h1><b>Current Affairs</b></h1></a>
+        
+      </div>
+    </article>
+  </main>
+</div>
+
+    </main>
+    
+    <nav class="navx">
+  <a href="index.html" class="nav__link">
+    <i class="material-icons nav__icon">dashboard</i>
+    <span class="nav__text">SHORTS</span>
+  </a>
+  <a href="ca.html" class="nav__link nav__link--active">
+    <i class="material-icons nav__icon">chrome_reader_mode</i>
+    <span class="nav__text">CURRENT AFFAIRS</span>
+  </a>
+  <a href="gk.html" class="nav__link">
+    <i class="material-icons nav__icon">library_books</i>
+    <span class="nav__text">STATIC GK</span>
+  </a>
+  <a href="categories.html" class="nav__link">
+    <i class="material-icons nav__icon">apps</i>
+    <span class="nav__text">CATEGORIES</span>
+  </a>
+        <a href="about.html" class="nav__link">
+    <i class="material-icons nav__icon">line_weight</i>
+    <span class="nav__text">MORE</span>
+  </a>
+  
+</nav>
+    </body>
+    <script >const toggler = document.querySelector('.navbar > .toggler'),
+  navListContainer = document.querySelector('.navbar > .nav-list-container');
+
+/*when toggler button is clicked*/
+toggler.addEventListener(
+  "click",
+  () => {
+    //convert hamburger to close
+    toggler.classList.toggle('cross');
+    //make nav visible
+    navListContainer.classList.toggle('nav-active');
+  },
+  true
+);
+</script> 
+<script>$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});</script>
+
+</html>
